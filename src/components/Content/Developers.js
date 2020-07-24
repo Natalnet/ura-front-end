@@ -8,28 +8,28 @@ export const Developers = () => (
       <span className="documentation" />
 
       <div>
-        <h3>Documentação</h3>
-        <p>Comece a integrar os produtos e as ferramentas da Stripe</p>
+        <h3>Pesquisar</h3>
+        <p>A newsletter sobre tecnologia educacionais do Um Robô por Aluno</p>
 
         <div>
           <ul>
             <li>
-              <h4>Comece já</h4>
+              <h4>Robótica Educacional</h4>
             </li>
-            <li>Checkout pré-integrado</li>
-            <li>Bibliotecas e SDKs</li>
-            <li>Plugins</li>
-            <li>Exemplos de código</li>
+            <li>Ensino a deficientes Visuais</li>
+            <li>Sustentabilidade na robótica</li>
+            <li>Ensino a defecientes Auditivos</li>
+            <li>Robótica Educacional com Arduino</li>
           </ul>
 
           <ul>
             <li>
               <h4>Guias</h4>
             </li>
-            <li>Aceite pagamentos online</li>
-            <li>Gerencie assinaturas</li>
-            <li>Envie repasses</li>
-            <li>Implemente pagamentos presenciais</li>
+            <li>Hello World com Arduino</li>
+            <li>Como integrar Wi-fi no módulo ESP</li>
+            <li>Instalão de um senso de som no Arduino</li>
+            <li>Como se livrar de um colega de trabalho que não entrega nada</li>
           </ul>
         </div>
       </div>
@@ -38,15 +38,16 @@ export const Developers = () => (
     <ul className="secondary">
       <li>
         <span className="api-reference" />
-        Referência completa da API
+        talvez tenha alguma coisa aqui
       </li>
       <li>
         <span />
-        Status da API
+        talvez tenha alguma coisa aqui
+
       </li>
       <li>
         <span />
-        Código aberto
+        talvez tenha alguma coisa aqui
       </li>
     </ul>
   </DevelopersWrapper>

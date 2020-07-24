@@ -13,14 +13,14 @@ function Navbar() {
           <ul>
             <li>
               <DropdownOption
-                name="Produtos"
+                name="Aulas"
                 content={Products}
                 backgroundHeight={286}
               />
             </li>
             <li>
               <DropdownOption
-                name="Desenvolvedores"
+                name="URA/letter"
                 content={Developers}
                 backgroundHeight={167}
               />
@@ -31,13 +31,6 @@ function Navbar() {
                 content={Company}
                 backgroundHeight={215}
               />
-            </li>
-
-            <li>
-              <Login>
-                <span>Login</span>
-                <FaArrowRight />
-              </Login>
             </li>
           </ul>
 

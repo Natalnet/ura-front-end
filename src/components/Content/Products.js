@@ -9,24 +9,24 @@ export const Products = () => (
         <span className="payments" />
 
         <div>
-          <h3>Payments</h3>
-          <p>Plataforma completa para pagamentos online</p>
+          <h3>Arduino</h3>
+          <p>Aprenda Arduino nessa série completa de vídeos </p>
         </div>
       </li>
       <li>
         <span className="billing" />
 
         <div>
-          <h3>Billing</h3>
-          <p>Plataforma completa para pagamentos online</p>
+          <h3>Python</h3>
+          <p>Aprenda Python nessa série completa de vídeos </p>
         </div>
       </li>
       <li>
         <span className="connect" />
 
         <div>
-          <h3>Connect</h3>
-          <p>Plataforma completa para pagamentos online</p>
+          <h3>P5JS</h3>
+          <p>Aprenda P5JS nessa série completa de vídeos </p>
         </div>
       </li>
     </ul>
@@ -35,32 +35,32 @@ export const Products = () => (
       <li>
         <span className="sigma" />
 
-        <h3>Sigma</h3>
-        <p>Análises e relatórios comerciais avançados</p>
+        <h3>Webinar 1</h3>
+        <p>Robótica Educacional - Aspectos Técnicos e Pedagógicos</p>
       </li>
       <li>
         <span className="atlas" />
 
-        <h3>Atlas</h3>
-        <p>Registro de empresas para startups</p>
+        <h3>Webinar 2</h3>
+        <p>Robótica Educacional Sustentavel - Todos os seus Aspectos Técnicos</p>
       </li>
       <li>
         <span className="radar" />
 
-        <h3>Radar</h3>
-        <p>Prevenção de fraudes com machine learning</p>
+        <h3>Webinar 3</h3>
+        <p>Robótica Educacional - Aplicações no Ensino a Deficientes Auditivos</p>
       </li>
       <li>
         <span className="issuing" />
 
-        <h3>Issuing</h3>
-        <p>Criação de cartões virtuais e físicos</p>
+        <h3>Webinar 4</h3>
+        <p>Robótica Educacional - xesquedele do dale</p>
       </li>
       <li>
         <span className="terminal" />
 
-        <h3>Terminal</h3>
-        <p>Pagamentos pessoais programáveis</p>
+        <h3>Webinar 5</h3>
+        <p>Robótica Educacional - Como o pub squad vai dominar o mundo</p>
       </li>
     </ul>
   </ProductsWrapper>
