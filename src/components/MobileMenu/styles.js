@@ -51,6 +51,10 @@ export const AulasContent = styled.div`
   padding: 20px 15px;
   width: 100%;
 
+  @media (max-width: 300px) {
+    flex-direction: column;
+  }
+
 
   div {
     width: 100%;
