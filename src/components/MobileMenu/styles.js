@@ -78,7 +78,7 @@ export const AulasContent = styled.div`
       }
 
       p {
-        font-size: 17px;
+        font-size: 18px;
         color: #424770;
         margin-left: 8px;
         font-weight: bold;
