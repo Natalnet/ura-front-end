@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import { Container, CloseButton, HeaderTitle, AulasContent } from './styles';
+import { Container, CloseButton, HeaderTitle, AulasContent, Line } from './styles';
 
 function MobileMenu({ open, setOpen }) {
 
@@ -12,6 +12,8 @@ function MobileMenu({ open, setOpen }) {
     </HeaderTitle>
 
     <AulasContent>
+
+
       <div>
         <Link to="/webinar">
           <span />
@@ -49,6 +51,7 @@ function MobileMenu({ open, setOpen }) {
         </Link>
       </div>
     </AulasContent>
+    <Line />
   </Container>
 }
 

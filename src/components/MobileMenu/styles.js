@@ -41,6 +41,7 @@ export const HeaderTitle = styled.div`
     text-transform: uppercase;
     color: #8898AA;
     font-size: 17px;
+    font-weight: bold;
   }
 `
 
@@ -50,6 +51,8 @@ export const AulasContent = styled.div`
 
   padding: 20px 15px;
   width: 100%;
+
+  /* border-bottom: 1px solid #8898AA; */
 
   @media (max-width: 300px) {
     flex-direction: column;
@@ -85,4 +88,12 @@ export const AulasContent = styled.div`
       }
     }
   }
+`
+
+export const Line = styled.div`
+  width: 100%;
+  height: 0.08px;
+  
+  background: #ccc;
+  opacity: 0.9;
 `
