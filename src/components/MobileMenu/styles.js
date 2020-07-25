@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import { MdClose } from 'react-icons/md'
 import { FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: ${({ open }) => open ? 'block' : 'none'};
 
   position: relative;
   width: 95%;
-  height: 477px;
+  height: 480px;
   border-radius: 4px;
   z-index: 50;
   top: 12px;
@@ -22,7 +23,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 300px) {
-    height: 753px;
+    height: 754px;
   }
 
 `;
@@ -58,7 +59,7 @@ export const AulasContent = styled.div`
   padding: 20px 15px;
   width: 100%;
 
-  /* border-bottom: 1px solid #8898AA; */
+  border-bottom: 0.01px solid #8898AA;
 
   @media (max-width: 300px) {
     flex-direction: column;
@@ -84,8 +85,10 @@ export const AulasContent = styled.div`
         opacity: 0.7;
       }
 
+      
+
       span {
-        display: inline-block;
+          display: inline-block;
           width: 24px;
           height: 24px;
           border-radius: 50%;
@@ -102,15 +105,6 @@ export const AulasContent = styled.div`
     }
   }
 `
-
-export const Line = styled.div`
-  width: 100%;
-  height: 0.08px;
-  
-  background: #ccc;
-  opacity: 0.9;
-`
-
 export const BottomContent = styled.div`
   display: flex;
   flex-direction: row;

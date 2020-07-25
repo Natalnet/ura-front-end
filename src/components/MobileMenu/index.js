@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
+// import ArduinoLogo from '../../assets/arduino-circle.jpg'
 
 import {
   Container,
   CloseButton,
   HeaderTitle,
   AulasContent,
-  Line,
   BottomContent,
   LoginCotent,
   ArrowLeft
@@ -14,7 +16,13 @@ import {
 
 function MobileMenu({ open, setOpen }) {
 
-  return <Container open={open} setOpen={() => setOpen(!open)}>
+  return <Container
+    open={open}
+    setOpen={() => setOpen(!open)}
+    animate={open ? { scale: 1 } : { scale: 1.15, opacity: 5, transition: { when: 'beforeChildren', staggerChildren: 0.1 } }}
+
+
+  >
     <CloseButton onClick={() => setOpen(false)} />
     <HeaderTitle>
       <h1>Aulas</h1>
@@ -30,40 +38,39 @@ function MobileMenu({ open, setOpen }) {
         </Link>
         <Link to="/webinar">
           <span />
-          <p>Arduino</p>
+          <p>Python</p>
         </Link>
         <Link to="/webinar">
           <span />
-          <p>Arduino</p>
+          <p>P5JS</p>
         </Link>
         <Link to="/webinar">
           <span />
-          <p>Arduino</p>
+          <p>Módulo ESP</p>
         </Link>
       </div>
       <div>
         <Link to="/webinar">
           <span />
-          <p>Arduino</p>
+          <p>Webinar 1</p>
         </Link>
         <Link to="/webinar">
           <span />
-          <p>Arduino</p>
+          <p>webinar 2</p>
         </Link>
         <Link to="/webinar">
           <span />
-          <p>Arduino</p>
+          <p>webinar 3</p>
         </Link>
         <Link to="/webinar">
           <span />
-          <p>Arduino</p>
+          <p>webinar 4</p>
         </Link>
       </div>
     </AulasContent>
-    <Line />
     <BottomContent>
       <div>
-        <Link to="/"><p>Contato</p></Link>
+        <Link to="/"><p>Newsletter</p></Link>
         <Link to="/"><p>Lorem ipms</p></Link>
         <Link to="/"><p>Dolo ofer set</p></Link>
         <Link to="/"><p>Xeusque</p></Link>
