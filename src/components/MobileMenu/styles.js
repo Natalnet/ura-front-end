@@ -35,13 +35,50 @@ export const CloseButton = styled(MdClose)`
 export const HeaderTitle = styled.div`
   width: 100%;
 
-  padding: 5px 10px;
-
-  background: #ccc;
+  padding: 20px 15px;
 
   h1 {
+    text-transform: uppercase;
     color: #8898AA;
-    font-size: 22px;
+    font-size: 17px;
   }
+`
 
+export const AulasContent = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  padding: 20px 15px;
+  width: 100%;
+
+
+  div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 12px;
+
+      span {
+        display: inline-block;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background: #80b9f9;
+
+      }
+
+      p {
+        font-size: 17px;
+        color: #424770;
+        margin-left: 8px;
+        font-weight: bold;
+      }
+    }
+  }
 `
