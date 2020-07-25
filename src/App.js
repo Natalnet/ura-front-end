@@ -4,8 +4,8 @@ import './styles/global.scss'
 
 import Routes from './Routes/index.js'
 
-import Layout from './components/Layout'
-import NavBar from './components/NavBar'
+// import Layout from './components/Layout'
+// import NavBar from './components/NavBar'
 
 function App() {
   return (

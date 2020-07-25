@@ -10,6 +10,10 @@ export const Container = styled.nav`
     justify-content: center;
 
     padding: 0 21px;
+
+    @media (max-width: 990px) {
+    display: none;
+    }
   }
 `
 
@@ -86,4 +90,20 @@ export const Login = styled(Link)`
     color: #fff;
   }
 
+`
+
+export const Burguer = styled.div`
+  height: 20px;
+  width: 20px;
+  display: none;
+
+  background: #fff;
+
+  position: absolute;
+  top: 21px;
+  right: 15px;
+
+  @media (max-width: 990px) {
+    display: unset;
+  }
 `

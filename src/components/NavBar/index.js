@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Products, Developers, Company } from '../Content';
 import { DropdownProvider, DropdownOption, DropdownRoot } from '../Dropdown';
-import { Container, DropdownStyles, Login } from './styles';
-import { FaArrowRight } from 'react-icons/fa'
+import { Container, DropdownStyles } from './styles';
+import Burger from '../Burger'
+import MobileMenu from '../MobileMenu'
+// import { FaArrowRight } from 'react-icons/fa'
 
 function Navbar() {
+  const [open, setOpen] = useState(false)
+  console.log(open)
+
   return (
     <DropdownProvider>
       <DropdownStyles>
@@ -20,7 +25,7 @@ function Navbar() {
             </li>
             <li>
               <DropdownOption
-                name="URA/letter"
+                name="Newsletter"
                 content={Developers}
                 backgroundHeight={167}
               />
@@ -33,14 +38,10 @@ function Navbar() {
               />
             </li>
           </ul>
-
-
-
+          <Burger open={open} setOpen={setOpen} />
+          <MobileMenu open={open} setOpen={setOpen} />
         </Container>
-
-
         <DropdownRoot />
-
       </DropdownStyles>
     </DropdownProvider>
   );
