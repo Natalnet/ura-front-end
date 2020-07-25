@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md'
+import { FaArrowRight } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   display: ${({ open }) => open ? 'block' : 'none'};
 
   position: relative;
   width: 95%;
-  height: 400px;
+  height: 477px;
   border-radius: 4px;
   z-index: 50;
   top: 12px;
@@ -17,6 +19,10 @@ export const Container = styled.div`
 
   @media (min-width: 990px) {
     display: none;
+  }
+
+  @media (max-width: 300px) {
+    height: 753px;
   }
 
 `;
@@ -65,11 +71,18 @@ export const AulasContent = styled.div`
     display: flex;
     flex-direction: column;
 
+
     a {
       width: 100%;
       display: flex;
       flex-direction: row;
       margin-bottom: 12px;
+
+      transition: opacity 0.1s ease-in;
+
+      &:hover {
+        opacity: 0.7;
+      }
 
       span {
         display: inline-block;
@@ -96,4 +109,70 @@ export const Line = styled.div`
   
   background: #ccc;
   opacity: 0.9;
+`
+
+export const BottomContent = styled.div`
+  display: flex;
+  flex-direction: row;
+
+  padding: 20px 15px;
+  width: 100%;
+
+  @media (max-width: 300px) {
+    flex-direction: column;
+  }
+
+  div {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    
+
+    a {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 12px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      p {
+        font-size: 18px;
+        color: #424770;
+        margin-left: 8px;
+      }
+    }
+  }
+`
+export const LoginCotent = styled(Link)`
+  width: 100%;
+  padding: 20px 22px;
+  background: #f6f9fc;
+
+  transition: opacity 0.1s ease-in;
+
+  &:hover {
+    opacity: 0.7;
+  }
+  
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  p {
+    font-size: 18px;
+    color: #424770;
+    font-weight: bold;
+  }
+`
+export const ArrowLeft = styled(FaArrowRight)`
+  height: 16px;
+  width: 16px;
+  margin-left: 6px;
+  color: #424770;
 `

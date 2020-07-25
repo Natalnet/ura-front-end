@@ -1,7 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import { Container, CloseButton, HeaderTitle, AulasContent, Line } from './styles';
+import {
+  Container,
+  CloseButton,
+  HeaderTitle,
+  AulasContent,
+  Line,
+  BottomContent,
+  LoginCotent,
+  ArrowLeft
+} from './styles';
 
 function MobileMenu({ open, setOpen }) {
 
@@ -52,6 +61,27 @@ function MobileMenu({ open, setOpen }) {
       </div>
     </AulasContent>
     <Line />
+    <BottomContent>
+      <div>
+        <Link to="/"><p>Contato</p></Link>
+        <Link to="/"><p>Lorem ipms</p></Link>
+        <Link to="/"><p>Dolo ofer set</p></Link>
+        <Link to="/"><p>Xeusque</p></Link>
+      </div>
+      <div>
+        <Link to="/"><p>Dale</p></Link>
+        <Link to="/"><p>Brehlelele</p></Link>
+        <Link to="/"><p>dwawin</p></Link>
+        <Link to="/"><p>Bnagbros</p></Link>
+      </div>
+    </BottomContent>
+
+    <LoginCotent to="/profile" >
+      <p >Meu Perfil</p>
+      <ArrowLeft />
+    </LoginCotent>
+
+
   </Container>
 }
 
